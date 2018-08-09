@@ -28,6 +28,10 @@ public class UserDataService {
 		return userDataRepository.findByLname(lname);
 	}
 	
+	public List<UserData> findAll(){
+		return userDataRepository.findAll();
+	}
+	
 	public UserData save(UserData userdata) {
 		return userDataRepository.save(userdata);
 	}

@@ -1,7 +1,12 @@
 package sample.spring.app.UserData;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "UserData")
 public class UserData {
 	
+	@Id
 	String id;
 	String fname;
 	String lname;
